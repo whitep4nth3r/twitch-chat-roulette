@@ -29,3 +29,5 @@ jobs:
           PORT: 3042
           PLT_SERVER_HOSTNAME: 127.0.0.1
           PLT_SECRET_KEY: ${{ secrets.PLT_SECRET_KEY }}
+          PLT_TWITCH_CLIENT_ID: ${{ secrets.PLT_TWITCH_CLIENT_ID }}
+          PLT_TWITCH_SECRET: ${{ secrets.PLT_TWITCH_SECRET }}

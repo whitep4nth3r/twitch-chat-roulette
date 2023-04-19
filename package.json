@@ -1,0 +1,29 @@
+{
+  "name": "twitch-chat-roulette",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitep4nth3r/twitch-chat-roulette.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whitep4nth3r/twitch-chat-roulette/issues"
+  },
+  "homepage": "https://github.com/whitep4nth3r/twitch-chat-roulette#readme",
+  "dependencies": {
+    "@fastify/oauth2": "^7.0.1",
+    "@fastify/one-line-logger": "^1.1.1",
+    "@fastify/secure-session": "^6.1.0",
+    "desm": "^1.3.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.15.0",
+    "pino-pretty": "^10.0.0"
+  }
+}

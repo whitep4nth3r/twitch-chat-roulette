@@ -1,10 +1,9 @@
 import fastifyOauth2 from "@fastify/oauth2";
 
 /** @param {import('fastify').FastifyInstance} fastify */
-import fs from "fs/promises"; //new stuff! with promises API not callbacks
 import { join } from "desm";
 
-export default async function (app, opts) {
+export default async function utils(app, opts) {
   app.register(import("@fastify/formbody"));
   app.register(import("@fastify/websocket"));
 
@@ -44,3 +43,5 @@ export default async function (app, opts) {
     callbackUri: "http://localhost:3000/twitch/callback", //defined in the Twitch dashboard as callback Uri for this client app
   });
 }
+
+utils[Symbol.for("skip-override")] = true;

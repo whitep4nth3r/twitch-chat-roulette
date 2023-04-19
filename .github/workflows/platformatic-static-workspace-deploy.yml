@@ -4,8 +4,8 @@ on:
     branches:
       - main
     paths-ignore:
-      - 'docs/**'
-      - '**.md'
+      - "docs/**"
+      - "**.md"
 
 jobs:
   build_and_deploy:
@@ -21,11 +21,10 @@ jobs:
         uses: platformatic/onestep@latest
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          platformatic_workspace_id: lksjdh
+          platformatic_workspace_id: f4374e71-8c8a-4fb6-b540-1eee595eed13
           platformatic_workspace_key: ${{ secrets.PLATFORMATIC_STATIC_WORKSPACE_API_KEY }}
           platformatic_config_path: ./platformatic.service.json
         env:
-          PLT_SERVER_LOGGER_LEVEL: info 
-          PORT: 3042 
-          PLT_SERVER_HOSTNAME: 127.0.0.1 
-
+          PLT_SERVER_LOGGER_LEVEL: info
+          PORT: 3042
+          PLT_SERVER_HOSTNAME: 127.0.0.1

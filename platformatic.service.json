@@ -14,7 +14,8 @@
         "encapsulate": false,
         "options": {
           "twitch_client_id": "{PLT_TWITCH_CLIENT_ID}",
-          "twitch_secret": "{PLT_TWITCH_SECRET}"
+          "twitch_secret": "{PLT_TWITCH_SECRET}",
+          "secret_key": "{PLT_SECRET_KEY}"
         }
       },
       {

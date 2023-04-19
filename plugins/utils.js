@@ -19,7 +19,7 @@ export default async function (app, opts) {
     // the name of the session cookie, defaults to value of sessionName
     cookieName: "my-session-cookie",
     // adapt this to point to the directory where secret-key is located
-    key: await fs.readFile(join(import.meta.url, "../secret-key")),
+    key: Buffer.from(opts.secret_key, "base64"),
     cookie: {
       path: "/",
       // options for setCookie, see https://github.com/fastify/fastify-cookie

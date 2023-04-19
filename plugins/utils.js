@@ -40,7 +40,7 @@ export default async function utils(app, opts) {
       client_secret: opts.twitch_secret,
     },
     startRedirectPath: "/twitch/login", //GET path created by this plugin
-    callbackUri: "http://localhost:3000/twitch/callback", //defined in the Twitch dashboard as callback Uri for this client app
+    callbackUri: "https://lucid-unbiased-conscious-name.deploy.space/twitch/callback", //defined in the Twitch dashboard as callback Uri for this client app
   });
 }
 

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://platformatic.dev/schemas/v0.20.1/service",
+  "server": {
+    "hostname": "{PLT_SERVER_HOSTNAME}",
+    "port": "{PORT}",
+    "logger": {
+      "level": "{PLT_SERVER_LOGGER_LEVEL}"
+    }
+  },
+  "plugins": {
+    "paths": [
+      {
+        "path": "./plugins",
+        "encapsulate": false,
+        "options": {
+          "twitch_client_id": "{PLT_TWITCH_CLIENT_ID}",
+          "twitch_secret": "{PLT_TWITCH_SECRET}"
+        }
+      },
+      {
+        "path": "./routes",
+        "options": {
+          "twitch_client_id": "{PLT_TWITCH_CLIENT_ID}",
+          "twitch_secret": "{PLT_TWITCH_SECRET}"
+        }
+      }
+    ]
+  }
+}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx plt service start"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "dotenv": "^16.0.3",
     "fastify": "^4.15.0",
     "mqemitter": "^5.0.0",
-    "pino-pretty": "^10.0.0"
+    "pino-pretty": "^10.0.0",
+    "platformatic": "^0.20.1"
   }
 }
